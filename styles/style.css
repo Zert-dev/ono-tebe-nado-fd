@@ -1,6 +1,6 @@
 
 /*блок header гриды и формление текста*/
-.header{
+.header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
@@ -11,7 +11,7 @@
 }
 
 /*декорации текста подчеркивание*/
-.underline-text-decoration{
+.underline-text-decoration {
     text-decoration: underline;
     text-underline-offset: 4px;
     cursor: pointer;
@@ -25,7 +25,7 @@
 
 
 /*меню*/
-.nav{
+.nav {
     align-self: center;
 }
 .menu {
@@ -39,7 +39,7 @@
 /* закрывашка меню*/
 
 /*логотип*/
-.logo-black{
+.logo-black {
     width:148px;
     height:105px;
     align-self: center;
@@ -48,11 +48,11 @@
 /*закрывашка логотип*/
 
 /*контактные данные*/
-.address-header{
+.address-header {
     justify-self: end;
     align-self: center;
 }
-.contact-list{
+.contact-list {
     list-style-type: none;
     overflow-wrap: normal;
     width:240px ;
@@ -65,7 +65,7 @@
 
 
 /*блок cover*/
-.cover{
+.cover {
   width: 1100px;
   height: 757px;
   background-image: url(/images/cover.jpg);
@@ -74,20 +74,18 @@
   position: relative;
 }
 
-.ono-tebe-nado-position{
+.ono-tebe-nado-position {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   grid-template-areas: 
     "ono . ."
     ". tebe ."
-    ". . nado"
-  ; 
+    ". . nado";
   text-transform: uppercase;
   color: #FFFFFF;
   font-weight: 700;
   font-size: 100px;
-  text-transform: uppercase;
   width: 1000px;
   height: 385px;
   margin: 0px 50px 207px 50px;
@@ -95,15 +93,15 @@
   letter-spacing: 0.3em;
 }
 
-.ono{
+.ono {
   grid-area: ono;
 }
 
-.tebe{
+.tebe {
   grid-area: tebe;
 }
 
-.nado{
+.nado {
   grid-area: nado;
   margin-left:-85px ;
   margin-top: 20px;
@@ -171,18 +169,18 @@
 
 /*БЛОК lots*/
 
-.lots{
+.lots {
   padding: 180px 24px 120px 24px;
 }
 
-.title-lots{
+.title-lots {
   font-weight: 700;
   font-size: 40px;
   text-transform: uppercase;
   padding: 0 0 27px 40px;
 }
 
-.card-lots-position{
+.card-lots-position {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -229,7 +227,7 @@
   padding: 30px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; 
+  justify-content: space-between;
 }
 
 .card-link {
@@ -251,7 +249,7 @@
   text-underline-offset: 4px;
 }
 
-.card-info{
+.card-info {
   font-weight: 400;
   font-size: 20px;
   color: #FFFFFF;
@@ -260,7 +258,7 @@
 
 
 
-.link-more{
+.link-more {
   color: black;
   font-size: 20px;
   font-weight: 400;
@@ -271,13 +269,13 @@
 
 /*БЛОК ABOUT*/
 
-.about{
+.about {
   display: grid;
   grid-template-columns: 1fr 2fr;
   padding-bottom:180px ;
 }
 
-.background-logo-white{
+.background-logo-white {
   background-color: black;
   width: 240px;
   height: 240px;
@@ -291,12 +289,12 @@
   margin-top: 35px;
 }
 
-.logo-white{
+.logo-white {
   width: 148px;
   height: 114px;
 }
 
-.title-about{
+.title-about {
   font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
@@ -304,13 +302,13 @@
   padding-top: 136px;
 }
 
-.about-info{
+.about-info {
   font-size:20px ;
   font-weight:400 ;
   display: block;
 }
 
-.pragraf-spacing{
+.pragraf-spacing {
   margin-bottom: 20px;
 }
 /*ЗАКРЫВАШКА БЛОК ABOUT*/
@@ -318,18 +316,17 @@
 
 /*БЛОК FOOTER*/
 
-.footer{
+.footer {
   display: grid;
   grid-template-columns: repeat(3 , 1fr);
   grid-template-rows: 1fr;
   padding: 0 50px 82px;
 }
 
-.address-footer{
+.address-footer {
     justify-self: start;
     align-self: center;
     list-style-type:none;
-    list-style-type: none;
     overflow-wrap: normal;
     width:240px ;
     height: 98px;
@@ -337,7 +334,7 @@
     font-weight: 400;
 }
 
-.menu-footer{
+.menu-footer {
     display: flex;
     flex-direction: column;
     list-style-type:none;
@@ -348,7 +345,7 @@
     font-weight: 400;
 }
 
-.links-social{
+.links-social {
   list-style-type:none;
   display: flex;
   flex-direction: row;
@@ -358,7 +355,7 @@
 
 .you-tube,
 .vk,
-.pinterest{
+.pinterest {
   width: 48px;
   height: 48px;
   cursor: pointer;
