@@ -1,16 +1,15 @@
 a {
   text-underline-offset: 4px;
 }
-
 /*блок header гриды и формление текста*/
 .header {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    padding: 92px 50px 96px 50px;
-    font-size: 18px;
-    font-weight: 400;
-    width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  padding: 92px 50px 96px 50px;
+  font-size: 18px;
+  font-weight: 400;
+  width: 100%;
 }
 
 /*декорации текста подчеркивание*/
@@ -19,18 +18,17 @@ a {
 }
 /*закрывашка блок header гриды и формление текста*/
 
-
 /*меню*/
 .nav {
-    align-self: center;
+  align-self: center;
 }
 .header__links-list-item {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    list-style-type:circle;
-    gap: 25px;
-    white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: circle;
+  gap: 25px;
+  white-space: nowrap;
 }
 
 .header__links-list-item_no-bullit {
@@ -40,31 +38,26 @@ a {
 
 /*логотип*/
 .logo-black {
-    width:138px;
-    height:105px;
-    align-self: center;
-    justify-self: center;
-
+  width: 138px;
+  height: 105px;
+  align-self: center;
+  justify-self: center;
 }
 /*закрывашка логотип*/
 
 /*контактные данные*/
 .address-header {
-    justify-self: end;
-    align-self: center;
-    line-height: 24.3px;
-    font-style: normal;
-    list-style-type: none;
-    overflow-wrap: normal;
-    width:240px ;
-    min-height: 98px;
+  justify-self: end;
+  align-self: center;
+  line-height: 24.3px;
+  font-style: normal;
+  list-style-type: none;
+  overflow-wrap: normal;
+  width: 240px;
 }
 /*закрывашка контактные данные*/
 
-
 /*БЛОК MAIN*/
-
-
 /*блок cover*/
 .cover {
   min-width: 1100px;
@@ -78,40 +71,46 @@ a {
 .aligned-text {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: 
-    "aligned-text_left . ."
-    ". aligned-text_center ."
-    ". . aligned-text_right";
+  grid-template-areas:
+    "aligned-text_left aligned-text_left aligned-text_left"
+    "aligned-text_center aligned-text_center aligned-text_center"
+    "aligned-text_right aligned-text_right aligned-text_right";
+  /*данная структура реализова для того что бы если 
+  текст изменится на более длинный ил коротки он не съежал*/
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: 700;
   font-size: 100px;
-  margin: 0px 50px 207px 50px;
-  padding-top: 165px;
   letter-spacing: 0.3em;
+  padding: 165px 50px 40px 50px;
 }
 
 .aligned-text_left {
   grid-area: aligned-text_left;
+  justify-self: start;
+  align-items: center;
 }
 
 .aligned-text_center {
   grid-area: aligned-text_center;
-  padding-top: 16px;
-  padding-left: 15px;
+  justify-self: center;
+  align-items: center;
+  margin: 17px 0 0 30px; /*для дополнительного позиционирование по центру*/
 }
 
 .aligned-text_right {
   grid-area: aligned-text_right;
-  margin-left:-85px ;
-  margin-top: 19px;
+  justify-self: end;
+  align-items: end;
+  margin: 18px -30px 0 0; /*понимаю что плохо использовать отрицательное значение 
+  но это дополнительные меры неизбежны так как "надо" немного залит на 2 ячейку по макету*/
 }
 
 .description {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: -168px 50px 0 47px;
+  margin: 0px 50px 0 47px;
   padding: 50px 0px;
 }
 
@@ -121,39 +120,38 @@ a {
   font-size: 22px;
   line-height: 24px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   white-space: nowrap;
   margin: 0;
   font-weight: 400;
   margin-right: 107px;
-  word-spacing: 19px
+  word-spacing: 19px;
 }
 
 /* Кнопка Сделать ставку */
 .btn-do-bet {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 22px;
   font-weight: 500;
   line-height: 24px;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 13px 23px 12px 41px;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   background-color: transparent;
   cursor: pointer;
   white-space: nowrap;
   margin-top: 15px;
 }
 
-
-/* ===== ПЕРЕИСПОЛЬЗУЕМЫЙ КЛАСС ДЛЯ ЗАТЕМНЕНИЯ ===== */
+/*ПЕРЕИСПОЛЬЗУЕМЫЙ КЛАСС ДЛЯ ЗАТЕМНЕНИЯ*/
 .dark-overlay {
   position: relative;
 }
 
 .dark-overlay::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -163,13 +161,12 @@ a {
   z-index: 1;
 }
 
-/* Элементы внутри затемнённого блока — на переднем плане */
+/* Элементы внутри затемнённого блока на переднем плане */
 .dark-overlay > * {
   position: relative;
   z-index: 2;
 }
 /*закрывашка БЛОК cover*/
-
 
 /*БЛОК lots*/
 
@@ -177,7 +174,7 @@ a {
   padding: 180px 24px 120px 24px;
 }
 
-.lots a {
+.lots ul a {
   text-decoration: none;
 }
 
@@ -196,6 +193,7 @@ a {
   padding: 0;
   margin: 0;
   flex-wrap: wrap;
+  row-gap: 20px;
 }
 
 .card-item {
@@ -219,25 +217,21 @@ a {
   background-image: url(../images/card-lot-03.jpg);
 }
 
-
 .card-content {
   position: relative;
   z-index: 2;
   height: 100%;
-  padding: 30px;
+  padding: 48px 40px 48px 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-
-
 .title-card-lots {
-  color: #FFFFFF;
+  color: #ffffff;
   text-transform: uppercase;
   font-size: 22px;
   font-weight: 700;
-  padding: 16px 10px;
   display: inline-block;
   text-decoration: underline;
   text-underline-offset: 4px;
@@ -247,8 +241,7 @@ a {
 .card-info {
   font-weight: 400;
   font-size: 20px;
-  color: #FFFFFF;
-  padding: 10px 10px 30px 0px;
+  color: #ffffff;
 }
 
 .link-more {
@@ -257,6 +250,7 @@ a {
   font-weight: 400;
   padding: 30px 0 0 40px;
   display: block;
+  text-decoration: underline;
 }
 /*Закрывашка БЛОК lots*/
 
@@ -265,7 +259,7 @@ a {
 .about {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  padding-bottom:180px ;
+  padding-bottom: 150px;
 }
 
 .background-about__logo {
@@ -297,8 +291,8 @@ a {
 }
 
 .about-info {
-  font-size:20px ;
-  font-weight:400 ;
+  font-size: 20px;
+  font-weight: 400;
   display: block;
   padding-left: 18px;
   width: 693px;
@@ -315,40 +309,36 @@ a {
 
 .footer {
   display: grid;
-  grid-template-columns: repeat(3 , 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
-  padding: 0 50px 0 82px;
-  margin-top: -19px;
-  margin-bottom: 20px;
+  padding: 5px 50px 80px 50px;
 }
 
 .address-footer {
-    justify-self: start;
-    align-self: center;
-    list-style-type:none;
-    overflow-wrap: normal;
-    width:240px ;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 24.3px;
-    font-style: normal;
-    margin-left: -29px;
+  justify-self: start;
+  align-self: center;
+  list-style-type: none;
+  overflow-wrap: normal;
+  width: 248px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24.3px;
+  font-style: normal;
 }
 
 .footer__menu {
-    display: flex;
-    flex-direction: column;
-    list-style-type:none;
-    align-self: start;
-    justify-self: center;
-    align-items: center;
-    font-size: 18px;
-    font-weight: 400;
-    margin-left: -29px;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  align-self: start;
+  justify-self: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .footer__social-list {
-  list-style-type:none;
+  list-style-type: none;
   display: flex;
   flex-direction: row;
   justify-self: end;
@@ -360,6 +350,5 @@ a {
   height: 48px;
   cursor: pointer;
 }
-
 
 /*ЗАКРЫВАШАКа БЛОК FOOTER*/
