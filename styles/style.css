@@ -4,7 +4,7 @@ a {
 /*блок header гриды и формление текста*/
 .header {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr min-content 1fr;
   grid-template-rows: 1fr;
   padding: 92px 50px 96px 50px;
   font-size: 18px;
@@ -25,7 +25,7 @@ a {
 .header__links-list-item {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  gap: 33px;
   list-style-type: circle;
   gap: 25px;
   white-space: nowrap;
